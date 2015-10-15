@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingRidesViewController">
+            <connections>
+                <outlet property="loadingAnimation" destination="9gV-DK-BZC" id="Uyc-sh-gFo"/>
+                <outlet property="loadingRidesLabel" destination="N73-7u-eFS" id="Xd6-bS-quD"/>
+                <outlet property="view" destination="iN0-l3-epB" id="rQK-nu-Lvp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gV-DK-BZC">
+                    <rect key="frame" x="225" y="225" width="150" height="150"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="0fu-8M-YTH"/>
+                        <constraint firstAttribute="height" constant="300" id="26a-TQ-fgA"/>
+                        <constraint firstAttribute="width" secondItem="9gV-DK-BZC" secondAttribute="height" multiplier="1:1" id="5C1-Yl-srg"/>
+                        <constraint firstAttribute="height" constant="300" id="9qQ-eM-1r4"/>
+                        <constraint firstAttribute="height" constant="300" id="SX1-Um-0pC"/>
+                        <constraint firstAttribute="width" constant="300" id="TVP-PA-10M"/>
+                        <constraint firstAttribute="width" secondItem="9gV-DK-BZC" secondAttribute="height" multiplier="1:1" id="W0p-tU-xrp"/>
+                        <constraint firstAttribute="height" constant="150" id="ZaF-FR-q7W"/>
+                        <constraint firstAttribute="width" constant="150" id="hGj-yf-zo2"/>
+                        <constraint firstAttribute="width" constant="300" id="t5N-LB-wZv"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0fu-8M-YTH"/>
+                            <exclude reference="26a-TQ-fgA"/>
+                            <exclude reference="5C1-Yl-srg"/>
+                            <exclude reference="9qQ-eM-1r4"/>
+                            <exclude reference="SX1-Um-0pC"/>
+                            <exclude reference="TVP-PA-10M"/>
+                            <exclude reference="W0p-tU-xrp"/>
+                            <exclude reference="t5N-LB-wZv"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="XLL-aS-B6w"/>
+                    </connections>
+                </webView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading BCycle Stations..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="N73-7u-eFS" userLabel="Loading Stations - Label">
+                    <rect key="frame" x="188" y="325" width="225" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="4II-Qy-XiH"/>
+                        <constraint firstAttribute="width" constant="225" id="TFK-pt-jkW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.13725490196078433" green="0.14509803921568626" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="N73-7u-eFS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1zd-5g-MEb"/>
+                <constraint firstItem="N73-7u-eFS" firstAttribute="top" secondItem="9gV-DK-BZC" secondAttribute="bottom" constant="-50" id="2Zi-aQ-icH"/>
+                <constraint firstAttribute="centerX" secondItem="9gV-DK-BZC" secondAttribute="centerX" id="5jc-M1-JBJ"/>
+                <constraint firstAttribute="trailing" secondItem="9gV-DK-BZC" secondAttribute="trailing" id="902-Ip-le4"/>
+                <constraint firstItem="9gV-DK-BZC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9W4-0I-Pnc"/>
+                <constraint firstAttribute="bottom" secondItem="9gV-DK-BZC" secondAttribute="bottom" id="EZG-0z-XOl"/>
+                <constraint firstItem="9gV-DK-BZC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FqB-c3-gtA"/>
+                <constraint firstItem="9gV-DK-BZC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="HKG-RZ-MnK"/>
+                <constraint firstAttribute="centerY" secondItem="9gV-DK-BZC" secondAttribute="centerY" id="O6o-CU-5Hd"/>
+                <constraint firstItem="9gV-DK-BZC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="OTM-72-m3g"/>
+                <constraint firstAttribute="centerY" secondItem="9gV-DK-BZC" secondAttribute="centerY" id="qtP-V9-RYK"/>
+                <constraint firstAttribute="centerX" secondItem="9gV-DK-BZC" secondAttribute="centerX" id="r99-cc-LRN"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="902-Ip-le4"/>
+                    <exclude reference="9W4-0I-Pnc"/>
+                    <exclude reference="EZG-0z-XOl"/>
+                    <exclude reference="FqB-c3-gtA"/>
+                    <exclude reference="HKG-RZ-MnK"/>
+                    <exclude reference="OTM-72-m3g"/>
+                    <exclude reference="qtP-V9-RYK"/>
+                    <exclude reference="r99-cc-LRN"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

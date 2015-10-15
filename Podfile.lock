@@ -1,0 +1,113 @@
+PODS:
+  - AFNetworking (2.6.1):
+    - AFNetworking/NSURLConnection (= 2.6.1)
+    - AFNetworking/NSURLSession (= 2.6.1)
+    - AFNetworking/Reachability (= 2.6.1)
+    - AFNetworking/Security (= 2.6.1)
+    - AFNetworking/Serialization (= 2.6.1)
+    - AFNetworking/UIKit (= 2.6.1)
+  - AFNetworking/NSURLConnection (2.6.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.1)
+  - AFNetworking/Security (2.6.1)
+  - AFNetworking/Serialization (2.6.1)
+  - AFNetworking/UIKit (2.6.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Braintree (3.9.6):
+    - Braintree/API (= 3.9.6)
+    - Braintree/Coinbase (= 3.9.6)
+    - Braintree/Drop-In (= 3.9.6)
+    - Braintree/Payments (= 3.9.6)
+    - Braintree/PayPal (= 3.9.6)
+    - Braintree/UI (= 3.9.6)
+    - Braintree/Venmo (= 3.9.6)
+  - Braintree/API (3.9.6)
+  - Braintree/Coinbase (3.9.6):
+    - Braintree/API
+  - Braintree/Drop-In (3.9.6):
+    - Braintree/API
+    - Braintree/Coinbase
+    - Braintree/Payments
+    - Braintree/PayPal
+    - Braintree/UI
+    - Braintree/Venmo
+  - Braintree/Payments (3.9.6):
+    - Braintree/API
+    - Braintree/Coinbase
+    - Braintree/PayPal
+    - Braintree/Venmo
+  - Braintree/PayPal (3.9.6):
+    - Braintree/API
+    - Braintree/UI
+  - Braintree/UI (3.9.6):
+    - Braintree/API
+  - Braintree/Venmo (3.9.6):
+    - Braintree/API
+  - CardIO (5.1.1)
+  - Crashlytics (3.3.4)
+  - Fabric (1.5.5):
+    - Fabric/Base (= 1.5.5)
+  - Fabric/Base (1.5.5)
+  - FLAnimatedImage (1.0.8)
+  - FMDB (2.3):
+    - FMDB/standard (= 2.3)
+  - FMDB/common (2.3)
+  - FMDB/standard (2.3):
+    - FMDB/common
+  - GoogleAnalytics (3.13.0)
+  - GRMustache (7.3.0):
+    - JRSwizzle (~> 1.0)
+  - HTHorizontalSelectionList (0.4.7)
+  - JRSwizzle (1.0)
+  - JumioMobileSDK/Netverify (1.5.0)
+  - Mapbox-iOS-SDK (1.6.0):
+    - FMDB (= 2.3)
+    - GRMustache (= 7.3.0)
+    - SMCalloutView (= 2.0)
+  - OCMock (3.1.5)
+  - OHHTTPStubs (4.0.2)
+  - SMCalloutView (2.0)
+  - SplunkMint (4.3.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.6.0)
+  - Braintree (~> 3.9.3)
+  - CardIO (~> 5.1.1)
+  - Crashlytics (~> 3.3.1)
+  - Fabric (~> 1.5.1)
+  - FLAnimatedImage (~> 1.0.8)
+  - GoogleAnalytics (~> 3.13.0)
+  - HTHorizontalSelectionList (~> 0.4.7)
+  - JumioMobileSDK/Netverify (~> 1.5.0)
+  - Mapbox-iOS-SDK (= 1.6.0)
+  - OCMock (~> 3.1.5)
+  - OHHTTPStubs (~> 4.0.2)
+  - SplunkMint (~> 4.3.1)
+
+SPEC CHECKSUMS:
+  AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
+  Braintree: 74f0bd85743c2227147c361cc2c5c9aefe083ae8
+  CardIO: 2c3a8ef9b9add4bd664c83bb653b83b2f32d9d7f
+  Crashlytics: 41c082440d2e14da444186fff65e79c0b4b35d4c
+  Fabric: 190bf1a6eb65f7500de1347d027d2e59a7e53db1
+  FLAnimatedImage: f9422f796135aff80d8c00b2afc48015bb746e24
+  FMDB: 773d79bb74226959b7e2286b1d6e0bd857c88915
+  GoogleAnalytics: fcf1f1cad57ae1a9a53520018f0f680ceeeb8b49
+  GRMustache: 6baee020c5644416c034f5afb1607f6219e7f753
+  HTHorizontalSelectionList: 9a6195ecec2356c6cc4b4c792fa082a3d7347967
+  JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
+  JumioMobileSDK: 122053a9f099c26e77390271d311cace13b8fe77
+  Mapbox-iOS-SDK: ee136ca5b7f853456b50dfd7a7f0e243288cf86f
+  OCMock: 4c2925291f80407c3738dd1db14d21d0cc278864
+  OHHTTPStubs: dbd1957d414659783e07b49c961940b7564c23d9
+  SMCalloutView: f758edd824b18bf4f42de00df1e299861a2d1950
+  SplunkMint: a5884a461a9a16b0f6ea2e7233b7e235c8ec4bbf
+
+COCOAPODS: 0.39.0

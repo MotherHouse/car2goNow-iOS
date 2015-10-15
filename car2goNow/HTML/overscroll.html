@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>overscroll</title>
+
+        <script src="http://code.createjs.com/easeljs-0.8.1.min.js"></script>
+        <script src="http://code.createjs.com/tweenjs-0.6.1.min.js"></script>
+        <script src="http://code.createjs.com/movieclip-0.8.1.min.js"></script>
+        <script src="overscroll.js"></script>
+
+        <script>
+            var canvas, stage, exportRoot, scaleFactor, newScale, animSeq1;
+
+            function init() {
+                animSeq1 = new lib.overscroll();
+            }
+        
+            function newAnimation(animSeq) {
+                // create the animation and canvas
+                var newScaleFactor = 2;
+                createCanvas(1600,1600);
+                canvas = document.getElementById("canvas");
+                exportRoot = animSeq;
+                stage = new createjs.Stage(canvas);
+                stage.addChild(exportRoot);
+                stage.scaleX=newScaleFactor;
+                stage.scaleY=newScaleFactor;
+                stage.update();
+                createjs.Ticker.setFPS(lib.properties.fps);
+                createjs.Ticker.addEventListener("tick", stage);
+            }
+        
+            function createCanvas(bWidth,bHeight) {
+                // Create a canvas that is based on webview dimensions
+                var newCanvas = document.createElement('canvas');
+                newCanvas.id     = "canvas";
+                newCanvas.width  = bWidth;
+                newCanvas.height = bHeight;
+                var myElement = document.querySelector("#inner");
+                myElement.style.width = ""+bWidth+"px";
+                document.getElementById('inner').appendChild(newCanvas);
+            }
+        </script>
+    </head>
+
+    <body onload="init();" style="background-color:transparent;margin:0;padding:0;">
+        <div class="canvasHolder">
+            <div id="inner" class="innerCont" style="margin:auto;"></div>
+        </div>
+    </body>
+</html>
